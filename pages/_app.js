@@ -13,6 +13,7 @@ export default function App({ Component, pageProps }) {
         .init({ liffId: pageProps.liffId })
         .then(() => {
           if (liff.isLoggedIn()) {
+            console.log('liff', liff.getProfile())
             liff
               .getProfile()
               .then((profile) => {
