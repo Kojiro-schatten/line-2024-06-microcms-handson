@@ -16,7 +16,7 @@ import { getPreviousReservations, dateToString } from "../lib/util";
 
 export default function Home({ _staffs, serviceDomain, apiKey }) {
   const { liffObject: liff, profile, setLiffState } = useContext(LiffContext);
-
+  console.log('liff, profile, setLiffState', liff, profile, setLiffState)
   const [staffs, setStaff] = useState(_staffs)
   const [reservations, setReservation] = useState([])
   const [snackMessage, setSnackMessage] = useState(undefined)
